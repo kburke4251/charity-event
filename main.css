@@ -8,6 +8,7 @@ div.container {
   grid-template-columns: 1fr;
   grid-template-areas:
     "header"
+    "hero"
     "about"
     "event"
     "signup"
@@ -24,11 +25,15 @@ header {
 }
 
 main {
-
 }
+
 
 section {
     min-height: 300px;
+}
+
+section#hero {
+  grid-area: hero;
 }
 
 section#about {
@@ -56,8 +61,13 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "header header"
+      "hero hero"
       "event event"
       "about signup"
       "footer footer";
   }
+}
+
+img {
+  max-width: 100%;
 }
