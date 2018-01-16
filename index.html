@@ -2,9 +2,10 @@
 
 <html>
 <head>
-  <title>Simple Grid Layout</title>
+  <title>Bradley Lowery Foundation Event</title>
   <link href="main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
 </head>
 
 <body>
@@ -12,27 +13,66 @@
   <div class="container">
 
     <header>
-      This is the header area
+      Bradley Lowery Foundation
     </header>
 
     <section id="hero">
-      <img src="img/blflogo.jpg">
+    <img src="img/blflogo.jpg" alt="Bradley Lowery Foundation Logo">
     </section>
 
     <section id="about">
-      This is where I put info about the charity.
+        <p>Bradley Lowery was a boy who had battled neuroblastoma twice in his life. He won the first one, but then got it back and lost it on July 7, 2017. He loved soccer and his favourite team was Sunderland FC and had front row seats to each game, home and away. His family was close to famous English soccer player, Jermain Defoe, who at the time played for Sunderland. Sunderland was very helpful with paying for treatment and donating to the <a href="https://bradleyloweryfoundation.com/">Bradley Lowery Foundation</a> after he died. All english soccer fans have seen or heard of him and will always be remembered as the boy who fought like a lion throughout his battle.</p>
     </section>
 
     <section id="event">
-      This is where I put info about the event.
+      <h2>Charity Soccer Match</h2>
+      <p>We will have a soccer match to raise money to help kids who also have neuroblastoma and it will be at 14:30 on January 11, 2679 at Old Trafford. Sign up is below and we will send you a conformation email to say that you have signed up.<p>
+      <img src="img/oldtrafford.jpg">
+
+
     </section>
 
     <section id="signup">
-      This is where I put a signup form.
+      <h2>Sign up now!</h2>
+      <form class="pure-form" action="thanks.html" method="post">
+        <fieldset>
+          <legend>Shipping Information</legend>
+            <label for="name">Name:</label>
+              <input id="name" type="text" name="name">
+                <br>
+            <label for="address">Address:</label>
+              <input id="address" type="text" name="address">
+                <br>
+            <label for="city">City:</label>
+              <input id="city" type="text" name="city">
+            <label for="state">State:</label>
+              <input id="state" type="text" name="state" maxlength="2" size="2"><br>
+            <label for="zip">Zip:</label>
+              <input id="zip" type="text" name="zip" maxlength="5" size="5">
+                <br><br>
+        </fieldset>
+        <fieldset>
+          <legend>Credit Card Information</legend>
+            Card Type:
+              <input id="visa" type="radio" name="card" value="Visa">
+                <label for="visa">Visa</label>
+              <input id="mastercard" type="radio" name="card" value="Master Card">
+                <label for="mastercard">Master Card</label>
+              <input id="discover" type="radio" name="card" value="Discover">
+                <label for="discover">Discover</label>
+                  <br>
+            <label for="cardnumber">Card Number:</label>
+              <input id="cardnumber" type="text" name="cardnumber">
+                <br><br>
+        </fieldset>
+
+              <input type="submit" value="Submit">
+
+      </form>
     </section>
 
     <footer>
-      This is the footer area
+    By Kevin Burke. THIS IS NOT A REAL EVENT AND FOR A SCHOOL PROJECT
     </footer>
 
   </div>

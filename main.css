@@ -8,7 +8,6 @@ div.container {
   grid-template-columns: 1fr;
   grid-template-areas:
     "header"
-    "hero"
     "about"
     "event"
     "signup"
@@ -20,40 +19,52 @@ div.container {
 }
 
 header {
-  background-color: #99ffff;
+  background-color: #ff0000;
   grid-area: header;
+  font-size: 24px;
+  padding: 20px;
+  text-align: center;
 }
 
 main {
+  padding: 10px;
 }
 
 
 section {
     min-height: 300px;
+    padding: 10px;
 }
 
 section#hero {
   grid-area: hero;
+  padding: 10px;
 }
 
 section#about {
   background-color: #9999ff;
   grid-area: about;
+  font-size: 18px;
+  padding: 10px;
 }
 
 section#event {
   background-color: #99ff99;
   grid-area: event;
+  font-size: 18px;
+  padding: 10px;
 }
 
 section#signup {
   background-color: #ff9999;
   grid-area: signup;
+  padding: 10px;
 }
 
 footer {
   background-color: #ffff99;
   grid-area: footer;
+  padding: 10px;
 }
 
 @media (min-width: 800px) {
@@ -62,12 +73,20 @@ footer {
     grid-template-areas:
       "header header"
       "hero hero"
-      "event event"
-      "about signup"
+      "about about"
+      "event signup"
       "footer footer";
   }
 }
 
 img {
   max-width: 100%;
+}
+
+h2 {
+  border: 5px solid #ffffff;
+  border-radius: 20px 0 20px 0;
+  color: #ffffff;
+  padding: 5px;
+  text-align: center;
 }
